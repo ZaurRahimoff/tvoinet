@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<link rel="stylesheet" href="assets/css/grid.css" />
+	<link rel="stylesheet" href="assets/css/utilities.css" />
 
 	<title>Document</title>
 </head>
@@ -57,7 +58,7 @@
 					<li class="header__menu-item ">
 						<a href="index.html" class="header__menu-link">Акции</a>
 					</li>
-					<li class="header__menu-item active">
+					<li class="header__menu-item">
 						<a href="services.html" class="header__menu-link">услуги</a>
 					</li>
 					<li class="header__menu-item">
@@ -69,7 +70,7 @@
 					<li class="header__menu-item">
 						<a href="" class="header__menu-link">Новости</a>
 					</li>
-					<li class="header__menu-item">
+					<li class="header__menu-item active">
 						<a href="payment.html" class="header__menu-link">оплата</a>
 					</li>
 					<li class="header__menu-item">
@@ -84,52 +85,144 @@
 	</header>
 
 	<main class="main">
-		<section class="service">
+		<section class="payment">
 
-			<div class="service-icon">
-				<img src="img/icons/icon-service.svg" alt="" />
-			</div>
+			<div class="bg-payment-method"></div>
 
-			<div class="service__row">
+			<div class="payment__head-div">
 
-				<div class="service__col-1">
-					<h4 class="service__col-title">интернет</h4>
-					<p class="service__col-subtitle">Супер информация о данной услуге. Покрытие, пути подключения и
-						стоимость. Как связаться.</p>
-					<a href="#" class="service_more-btn">посмотреть тарифы <img src="img/icons/icon-detail-arrow.svg"
-							alt="" /></a>
+				<div class="container-fluid">
+
+					<div class="payment__method-main-icon">
+						<a href="#"><img src="img/icons/icon-arrow-down.svg" alt="" /></a>
+					</div>
+
+					<div class="row">
+						<div class="col-10">
+
+							<h1 class="payment__location-title w-75">
+								пополнение онлайн - пункты пополнения
+								<sup>
+									<img src="img/icons/icon-tn-orange.svg" alt="" />
+								</sup>
+							</h1>
+
+
+						</div>
+						<div class="col-2">
+							<div class="payment__navigation">
+								<ul class="payment__nav-list">
+									<li class="payment__nav-item">
+										<a href="payment.html" class="payment__nav-link">Способы оплаты</a>
+									</li>
+									<li class="payment__nav-item active">
+										<a href="payment2.html" class="payment__nav-link">Пункты пополнения</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row payment__list">
+
+						<div class="rate__cards">
+							<div class="container-fluid">
+								<div class="row">
+
+									<div class="col-2 pe-0">
+										<div class="payment__location-detail">
+											На этой странице
+											можно быстро и удобно пополнить Интернет счет путем погашения карты /
+											чека пополнения счета.
+										</div>
+									</div>
+
+									<div class="col-8 ms-4 px-4">
+
+										<div class="container-fluid">
+											<div class="row payment__method-row">
+
+												<div class="col-6 pe-0 payment__location-method">
+													<p class="payment__method-title">Погасить карту</p>
+													<img class="payment__method-icon" src="img/icons/icon-payment-card.svg" alt="">
+													<a class="payment__method-btn" href="#">погасить</a>
+												</div>
+												<div class="col-6 pe-0 payment__location-method">
+													<p class="payment__method-title">Погасить чек</p>
+													<img class="payment__method-icon" src="img/icons/icon-payment-bill.svg" alt="">
+													<a class="payment__method-btn" href="#">погасить</a>
+												</div>
+
+											</div>
+
+											<div class="row">
+												<div class="col-12 payment__location-points ms-3 px-0">
+
+													<h4 class="paymet__points-title">пункты пополнения</h4>
+
+													<p>
+														<img src="img/icons/icon-map-marker-pink.svg" alt="">
+														<span>- пункты пополнения
+															Интернет счета на любую сумму по номеру лицевого счета, а также продажа
+															чеков
+															пополнения счета.<span>
+													</p>
+													<p>
+														<img src="img/icons/icon-map-marker-blue.svg" alt="">
+														<span>- пункты продажи карт
+															пополнения счета.</span>
+													</p>
+
+													<iframe class="paymet__points-map"
+														src="https://www.google.com/maps/d/u/0/embed?mid=18a1sbRcKrnH_ggcsEY0uevmTPvxys3Ns&ehbc=2E312F"
+														width="100%" height="562"></iframe>
+
+													<p>
+														<img src="img/icons/icon-check-mark.svg" alt="">
+														<span>
+															- этим знаком отмечены пункты
+															прямого пополнения Интернет счета на любую сумму, все что Вам нужно знать
+															при
+															оплате так это семизначный номер своего лицевого счета, который можно
+															посмотреть в личном кабинете <a href="">https://my.cn.zp.ua</a>
+														</span>
+													</p>
+
+
+													<h4 class="paymet__points-name">Бородинский микрорайон</h4>
+
+													<p>
+														<img src="img/icons/icon-check-mark.svg" alt="">
+														<span> ул. Бородинская, 7, "ТД
+															Бородинский", (отдел "Техника и сервис", с 09:00 до 19:00, без выходных);
+															чек
+															пополнения, установлен терминал</span>
+													</p>
+
+													<p>
+														<img src="img/icons/icon-check-mark.svg" alt="">
+														<span>ул. Товарищеская 39,
+															"Континент", (компьютерный отдел, с 09:00 до 20:00); чек пополнения,
+															установлен терминал
+														</span>
+													</p>
+
+
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
 				</div>
 
-				<div class="service__col-2">
-					<h4 class="service__col-title">ТВ</h4>
-					<p class="service__col-subtitle">Супер информация о данной услуге. Покрытие, пути подключения и
-						стоимость. Как связаться.</p>
-					<a href="#" class="service_more-btn">посмотреть тарифы <img src="img/icons/icon-detail-arrow.svg"
-							alt="" /></a>
-				</div>
-
-				<h1 class="service__col-3 service__title">
-					услуги
-					<sup>
-						<img src="img/icons/icon-tn-orange.svg" alt="" />
-					</sup>
-				</h1>
-			</div>
-
-			<div class="service__row">
-
-				<div class="service__col-4">
-					<h4 class="service__col-title">Дополнительные услуги</h4>
-					<p class="service__col-subtitle">Супер информация о данной услуге. Покрытие, пути подключения и
-						стоимость. Как связаться. Перечень дополнительных услуг, для чего они нужны, какая в них выгода и
-						удобство. Возможно какие-то плюсы именно от данной компании.</p>
-					<a href="#" class="service_more-btn">посмотреть тарифы <img src="img/icons/icon-detail-arrow.svg"
-							alt="" /></a>
-				</div>
-
-
-			</div>
-			</div>
 		</section>
 	</main>
 
@@ -227,8 +320,26 @@
 				$(this).prev().find(menuItemLink).addClass("active").siblings().removeClass("active");
 			});
 		});
-
 	</script>
+
+
+	<script>
+		var acc = document.getElementsByClassName("payment__accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("payment__accordion-active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight) {
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+
 </body>
 
 </html>

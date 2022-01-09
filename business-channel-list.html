@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Prosto+One:regular" rel="stylesheet" /> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Kanit:300,regular,600" rel="stylesheet" /> -->
+
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="assets/css/grid.css" />
+
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<div class="top-bar">
+				<div class="header__logo">
+					<a href="/header.php" class="header__logo-link">
+						<img src="img/logo/logo_tvoynet-white_en.png" alt="твой мир - ТвойNET " class="header__logo-img" />
+					</a>
+					<p class="header__title">твой мир - ТвойNET</p>
+				</div>
+				<div class="social__links">
+					<ul class="social__links-list">
+						<li class="social__links-item telegram">
+							<a href="#" class="social__links-link">
+								<img src="img/icons/icon-telegram.svg" alt="ТвойNET telegramm" />
+							</a>
+						</li>
+						<li class="social__links-item facebook">
+							<a href="#" class="social__links-link">
+								<img src="img/icons/icon-facebook.svg" alt="ТвойNET facebook" />
+							</a>
+						</li>
+						<li class="social__links-item instagramm">
+							<a href="#" class="social__links-link">
+								<img src="img/icons/icon-instagramm.svg" alt="ТвойNET instagramm" />
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="profile__action">
+					<a href="#" class="profile__link">
+						<img src="img/icons/icon-profile-outline.svg" alt="ТвойNET profile" />
+					</a>
+					<a href="#" class="profile__btn-call">заказать звонок</a>
+				</div>
+			</div>
+
+			<nav class="header___nav">
+				<ul class="header__menu">
+					<li class="header__menu-item ">
+						<a href="index.html" class="header__menu-link">Акции</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="services.html" class="header__menu-link">услуги</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="rates.html" class="header__menu-link">Тарифы</a>
+					</li>
+					<li class="header__menu-item active">
+						<a href="business-internet.html" class="header__menu-link">бизнес тарифы</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="" class="header__menu-link">Новости</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="payment.html" class="header__menu-link">оплата</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="" class="header__menu-link">speed test</a>
+					</li>
+					<li class="header__menu-item">
+						<a href="" class="header__menu-link">контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="rate">
+
+			<div class="bg-channels__list"></div>
+
+			<div class="rate__head-div channel__list-head">
+
+				<div class="container-fluid">
+
+					<div class="channels__list-icon">
+						<img src="img/icons/icon-tv-black.svg" alt="" />
+					</div>
+
+					<div class="row">
+						<div class="col-10 p-0">
+							<a href="business-tv.html" class="rate_back-btn">назад к тарифам
+								<img src="img/icons/icon-detail-arrow.svg" alt="" />
+							</a>
+							<h1 class="rate__title">
+								Список доступных каналов
+								<sup>
+									<img src="img/icons/icon-tn-orange.svg" alt="" />
+								</sup>
+							</h1>
+						</div>
+						<div class="col-2">
+							<div class="rate__navigation">
+								<ul class="rate__nav-list">
+									<li class="rate__nav-item ">
+										<a href="business-internet.html" class="rate__nav-link">Интернет</a>
+									</li>
+									<li class="rate__nav-item active">
+										<a href="business-tv.html" class="rate__nav-link">ТВ</a>
+									</li>
+									<li class="rate__nav-item">
+										<a href="business-tv-internet.html" class="rate__nav-link">Интернет + ТВ</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row advance__service-list">
+
+						<div class="container-fluid">
+							<div class="row">
+
+								<div class="col-12">
+
+
+									<div class="tab business__channels-tab">
+										<button class="tablinks" onclick="openChannels(event, 'Test')"
+											id="defaultOpen">тест</button>
+										<button class="tablinks" onclick="openChannels(event, 'Standart')">Стандарт + HD</button>
+										<button class="tablinks" onclick="openChannels(event, 'Maximum')">максимум + HD</button>
+									</div>
+
+									<div id="Test" class="tabcontent">
+
+										<table class="channels__list-table">
+											<thead>
+												<tr class="channels__tr-header">
+													<th>Лого</th>
+													<th>название</th>
+													<th>Описание</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+											</tbody>
+										</table>
+
+									</div>
+
+									<div id="Standart" class="tabcontent">
+										<table class="channels__list-table">
+											<thead>
+												<tr class="channels__tr-header">
+													<th>Лого</th>
+													<th>название</th>
+													<th>Описание</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+
+											</tbody>
+										</table>
+
+									</div>
+
+									<div id="Maximum" class="tabcontent">
+										<table class="channels__list-table">
+											<thead>
+												<tr class="channels__tr-header">
+													<th>Лого</th>
+													<th>название</th>
+													<th>Описание</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+												<tr class="channels__tr-title">
+													<td><img src="img/icons/icon-tv.svg" alt=""></td>
+													<td>название</td>
+													<td>описание</td>
+												</tr>
+
+											</tbody>
+										</table>
+
+									</div>
+
+								</div>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer__item">
+				<div class="footer__logo">
+					<a href="">
+						<img class="company-logo" src="img/logo/logo_tvoynet-black_en.png" alt="" />
+					</a>
+					<div class="footer__lang">
+						<a href=""><img class="ua-lang" src="img/flag/ua-flag.png" alt="" /></a>
+						<a href=""><img class="ru-lang" src="img/flag/ru-flag.png" alt="" /></a>
+					</div>
+				</div>
+
+				<nav class="footer__nav">
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">Как подключиться?</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">частые вопросы</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">документы</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">Вакансии</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">о нас</a>
+						</li>
+					</ul>
+
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<p class="footer__menu-title">НАПИШИТЕ НАМ :</p>
+						</li>
+						<li class="footer__menu-item">
+							<a href="mailto:office@tvoi.net.ua" class="footer__menu-link-action">office@tvoi.net.ua</a>
+						</li>
+						<li class="footer__menu-item">
+							<p class="footer__menu-title">маркетинговый отдел :</p>
+						</li>
+						<li class="footer__menu-item">
+							<a href="mailto:tvoi.reklama@gmail.com" class="footer__menu-link-action">tvoi.reklama@gmail.com</a>
+						</li>
+					</ul>
+
+					<ul class="footer__menu">
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link">позвонить нам:</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link-action">+38(061) 221-01-10 <span>(многоканальный)</span>
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link-action">
+								+38(068) 221-01-10 Kyivstar <span>(многоканальный)</span>
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link-action">
+								+38(050) 550-01-10 <span>MTC-Vodafon</span>
+							</a>
+						</li>
+						<li class="footer__menu-item">
+							<a href="" class="footer__menu-link-action">+38(073) 550-01-10 <span>Lifecell</span></a>
+						</li>
+					</ul>
+				</nav>
+				<div class="footer__cookie-info">
+					<p>
+						Мы используем cookies на нашем сайте, чтобы улучшить его
+						использование и показывать релевантный контент.
+					</p>
+					<a href="" class="footer__cookie-link">Принять</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="assets/plugins/jQuery/jquery.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			var menuItem = $(".header__menu-item");
+			var menuItemLink = $(".header__menu-link");
+
+			$(menuItem).click(function () {
+				$(this).addClass("active").siblings().removeClass("active");
+				$(this).prev().find(menuItemLink).addClass("active").siblings().removeClass("active");
+
+				if ($(this).hasClass("active")) {
+					$(this).prevObject().siblings().addClass("active");
+				}
+			});
+		});
+
+	</script>
+
+	<script>
+		function openChannels(evt, channelsTab) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(channelsTab).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		document.getElementById("defaultOpen").click();
+	</script>
+
+</body>
+
+</html>
